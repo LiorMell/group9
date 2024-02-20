@@ -1,0 +1,33 @@
+
+/*<!-----------------   Containers  ------------------>*/
+.container-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.gallery-container {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 20px;
+}
+
+.photos-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+
+.image{
+    margin: 20px;
+    width: 400px;
+}
+.image:hover{
+    transform: scale(1.1);
+}

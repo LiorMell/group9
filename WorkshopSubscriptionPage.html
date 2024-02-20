@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cook Eat</title>
+    <title> Increment & Decrement Button </title>
+    <link rel="stylesheet" href="General.css">
+    <link rel="stylesheet" href="WorkshopSubscriptionPage.css">
+    <script defer src="WorkshopSubscriptionPage.js"></script>
+
+</head>
+<body>
+<!--   Navigation Bar  Start  -->
+<nav class="navBar">
+    <div class = "navDiv">
+        <div  id="logout" style="display: none">
+                <p>שלום רחלי!
+                <a href="RegistrationPage.html">התנתק</a></p>
+        </div>
+        <ul class="navItems">
+            <li><a href="HomePage.html">דף הבית</a></li>
+            <li><a href="GalleryPage.html">גלריה</a></li>
+            <li id="chosen-page"><a href="WorkshopsPage.html">רשימת סדנאות</a></li>
+            <li><a href="AboutPage.html">אודות</a></li>
+            <li><a href="ContactPage.html">צור קשר</a></li>
+            <li id="loggedInPage" style="display: none"><a href="PrivateAreaPage.html">אזור אישי</a></li>
+        </ul>
+
+        <a href="HomePage.html">
+        <img class="img-logo"  src="img/CookEat-Logo.png" alt="Cook Eat Logo">  </a>
+
+    </div>
+</nav>
+
+<!--   Navigation Bar  End  -->
+
+<div class="container-wrapper">
+    <div id="workshopDetails"> </div>
+
+    <div class = "Workshop-container">
+        <div class="container-sides">
+            <div>
+                <h2>מיקום:</h2>
+                <h3>בית ציוני אמריקה</h3>
+                <br>
+                <h2>הוראות השף:</h2>
+                <h3>אנא להגיע רעבים מאוד</h3>
+                <br>
+
+                <div class = "quantity">
+                    <span class = "minus">-</span>
+                    <span class = "num">1</span>
+                    <span class = "plus">+</span>
+                </div>
+            </div>
+            <form action="" id="form">
+                    <div class="input-row">
+                        <label for="customer_first_name" dir="rtl" >שם פרטי</label>
+                        <input class="input" type="text" id="customer_first_name">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-row">
+                        <label for="customer_last_name">שם משפחה</label>
+                        <input class="input" type="text" id="customer_last_name">
+                        <div class="error"></div>
+
+                    </div>
+                    <div class="input-row">
+                        <label for="customer_email">כתובת דוא"ל</label>
+                        <input class="input" type="text" placeholder="example@gmail.com" id="customer_email">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-row">
+                        <label for="customer_phone">טלפון</label>
+                        <input class="input" type="tel" id="customer_phone">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-row">
+                        <label for="customer_allergy">אלרגיות</label>
+                        <input class="input" type="text" id="customer_allergy">
+                        <div class="error"></div>
+                    </div>
+
+                <div class="buttons">
+                    <button class="submit-btn" type="submit">רשום אותי</button>
+                    <button class="return-btn" type="button" onclick="location.href='WorkshopsPage.html'"> לרשימת הסדנאות</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

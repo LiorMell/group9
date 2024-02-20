@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cook Eat</title>
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="General.css">
+    <script defer src="HomePage.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!--   Navigation Bar  Start  -->
+<nav class="navBar">
+    <div class = "navDiv">
+        <div  id="logout" style="display: none">
+                <p>שלום רחלי!
+                <a href="#">התנתק</a></p>
+        </div>
+        <ul class="navItems">
+            <li id="chosen-page"><a href="HomePage.html">דף הבית</a></li>
+            <li><a href="GalleryPage.html">גלריה</a></li>
+            <li><a href="WorkshopsPage.html">רשימת סדנאות</a></li>
+            <li><a href="AboutPage.html">אודות</a></li>
+            <li><a href="ContactPage.html">צור קשר</a></li>
+            <li id="loggedInPage" style="display: none"><a href="PrivateAreaPage.html">אזור אישי</a></li>
+        </ul>
+
+        <a href="HomePage.html">
+        <img class="img-logo"  src="img/CookEat-Logo.png" alt="Cook Eat Logo">  </a>
+
+    </div>
+</nav>
+
+<!--   Navigation Bar  End  -->
+
+<div class="main-container">
+    <div class="login-container">
+        <form id="form" action="">
+            <h1>התחברות</h1>
+            <div id="error"></div>
+
+            <div>
+                <div class="input-validate">
+                    <br>
+                    <label for="login_email"></label>
+                    <input class="input" type="text" id="login_email" placeholder="example@gmail.com">
+                    <div class="error"></div>
+                    <i class='bx bxs-user'></i>
+                    <div class="error"></div> <!-- Error message for email input -->
+                </div>
+                <div class="input-validate">
+                    <br>
+                    <label for="login_password"></label>
+                    <input class="input" type="password" id="login_password" placeholder="סיסמא">
+                    <div class="error"></div>
+                    <i class='bx bxs-lock-alt'></i>
+                    <div class="error"></div> <!-- Error message for password input -->
+                </div>
+            </div>
+
+            <button type="submit" class="btn">התחבר</button>
+            <div class="register-link">
+                <p>עדיין לא רשום?
+                    <a href="RegistrationPage.html"> הירשם עכשיו!</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="left-container">
+
+        <h1> אוהבים לאכול ולהנות?</h1>
+        <h2> Cook Eat מציעה מגוון סדנאות בישול כשרות בכל הארץ!!</h2>
+        <h2> במגוון קטגוריות, תאריכים, מקומות ושפים</h2>
+        <br>
+        <h3>הסדנא הקרובה ביותר:</h3>
+
+        <div id="workshopInfo"></div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cook Eat</title>
+    <link rel="stylesheet" href="RegistrationPage.css">
+    <link rel="stylesheet" href="General.css">
+    <script defer src="RegistrationPage.js"></script>
+
+</head>
+
+
+<body>
+<!--   Navigation Bar  Start  -->
+<nav class="navBar">
+    <div class = "navDiv">
+        <div  id="logout" style="display: none">
+            <p>שלום רחלי!
+            <a href="RegistrationPage.html">התנתק</a></p>
+        </div>
+        <ul class="navItems">
+            <li id="chosen-page"><a href="HomePage.html">דף הבית</a></li>
+            <li><a href="GalleryPage.html">גלריה</a></li>
+            <li><a href="WorkshopsPage.html">רשימת סדנאות</a></li>
+            <li><a href="AboutPage.html">אודות</a></li>
+            <li><a href="ContactPage.html">צור קשר</a></li>
+            <li id="loggedInPage" style="display: none"><a href="PrivateAreaPage.html">אזור אישי</a></li>
+        </ul>
+
+        <a href="HomePage.html">
+        <img class="img-logo"  src="img/CookEat-Logo.png" alt="Cook Eat Logo">  </a>
+
+    </div>
+</nav>
+
+<!--   Navigation Bar  End  -->
+<div class="container-wrapper">
+    <div class = "Register-container">
+        <div class="button-box">
+            <div id="btn"></div>
+               <button class="toggle-btn" type="button" onclick="chef_Register()">הירשם כשף</button>
+               <button class="toggle-btn" type="button" onclick="customer_Register()">הירשם כלקוח</button>
+        </div>
+
+        <form action="" id="Customer" class="Register-form">
+            <div> <!-- Right Side -->
+                <div class="input-validate">
+                    <label for="customer_email">כתובת דוא"ל</label>
+                    <input class="input" type="text" placeholder="example@gmail.com" id="customer_email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="customer_password">סיסמא</label>
+                    <input class="input" type="password" id="customer_password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="customer_password2">אימות סיסמא</label>
+                    <input class="input" type="password" id="customer_password2">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="customer_first_name">שם פרטי</label>
+                    <input class="input" type="text" id="customer_first_name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="customer_last_name">שם משפחה</label>
+                    <input class="input" type="text" id="customer_last_name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="customer_phone">טלפון</label>
+                    <input class="input" type="tel" id="customer_phone">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="customer_birthdate">תאריך יום הולדת</label>
+                    <input class="input" type="date" id="customer_birthdate">
+                    <div class="error"></div>
+                </div>
+            </div>
+            <div> <!-- Left Side -->
+                <div class="input-validate">
+                    <label for="showCreditCard_Checkbox">הצג פרטי אשראי</label>
+                    <input type="checkbox" id="showCreditCard_Checkbox" onclick="showCreditCard()">
+                </div>
+                <div id="detailsSection" style="display: none">
+                    <p>*מספר אשראי לפיקדון בלבד</p>
+                    <div class="input-validate">
+                        <label for="card_number">מספר אשראי</label>
+                        <input class="input" type="text" id="card_number">
+                        <div class="error"></div>
+
+                    </div>
+                    <div class="input-validate">
+                        <label for="card_valid_until">תוקף</label>
+                        <input class="input" type="text" id="card_valid_until">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-validate">
+                        <label for="CCV">CCV</label>
+                        <input class="input" type="text" id="CCV">
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="customer_submit" class="submit-btn" type="submit">הרשמה</button>
+                    <button class="return-btn" type="button" onclick="location.href='HomePage.html'">חזור</button>
+                </div>
+            </div>
+        </form>
+
+        <form action="" id="Chef" class="Register-form">
+            <div> <!-- Right Side -->
+                <div class="input-validate">
+                    <label for="chef_email">כתובת דוא"ל</label>
+                    <input class="input" type="text" placeholder="example@gmail.com" id="chef_email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="chef_password">סיסמא</label>
+                    <input class="input" type="password" id="chef_password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="chef_password2">אימות סיסמא</label>
+                    <input class="input" type="password" id="chef_password2">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="chef_first_name">שם פרטי</label>
+                    <input class="input" type="text" id="chef_first_name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="chef_last_name">שם משפחה</label>
+                    <input class="input" type="text" id="chef_last_name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="chef_phone">טלפון</label>
+                    <input class="input" type="tel" id="chef_phone">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="chef_notes">הערות</label>
+                    <input class="input" type="text" id="chef_notes">
+                    <div class="error"></div>
+                </div>
+            </div>
+            <div> <!-- Left Side -->
+                <div class="input-validate">
+                    <label for="chef_categories">קטגוריית בישול</label>
+                    <input class="input" type="text" id="chef_categories">
+                    <div class="error"></div>
+                </div>
+                <div class="buttons">
+                    <button id="chef_submit" class="submit-btn" type="submit">הרשמה</button>
+                    <button class="return-btn" type="button" onclick="location.href='HomePage.html'">חזור</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
