@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Cook Eat</title>
+    <title> Increment & Decrement Button </title>
+    <link rel="stylesheet" href="ContactPage.css">
+    <link rel="stylesheet" href="General.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="ContactPage.js"></script>
+
+
+</head>
+<body>
+<!---------------   Navigation Bar  Start  ------------------>
+<nav class="navBar">
+    <div class = "navDiv">
+        <div  id="logout" style="display: none">
+            <p>שלום רחלי!
+            <a href="RegistrationPage.html">התנתק</a></p>
+        </div>
+        <ul class="navItems">
+            <li><a href="HomePage.html">דף הבית</a></li>
+            <li><a href="GalleryPage.html">גלריה</a></li>
+            <li><a href="WorkshopsPage.html">רשימת סדנאות</a></li>
+            <li><a href="AboutPage.html">אודות</a></li>
+            <li id="chosen-page"><a href="ContactPage.html">צור קשר</a></li>
+            <li id="loggedInPage" style="display: none"><a href="PrivateAreaPage.html">אזור אישי</a></li>
+        </ul>
+
+        <a href="HomePage.html">
+        <img class="img-logo"  src="img/CookEat-Logo.png" alt="Cook Eat Logo">  </a>
+
+    </div>
+</nav>
+<!------------   Navigation Bar  End  ---------------------->
+
+<div class="container-wrapper">
+    <div class="container">
+        <form id="form" class="form">
+            <div class="customer-input">
+                <div class="input-validate">
+                    <label for="first_name">שם פרטי</label>
+                    <input class="input" type="text" id="first_name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="last_name">שם משפחה</label>
+                    <input class="input" type="text" id="last_name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="email">כתובת דוא"ל</label>
+                    <input class="input" type="text" placeholder="example@gmail.com" id="email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-validate">
+                    <label for="phone">טלפון</label>
+                    <input class="input" type="tel" id="phone">
+                    <div class="error"></div>
+                </div>
+            </div>
+            <div class="customer-input">
+                <div class="input-validate">
+                    <label for="contact_reason">סיבת הפנייה</label>
+                    <input class="input" type="text" id="contact_reason">
+                    <div class="error"></div>
+                </div>
+                <div class="buttons">
+                    <button class="submit-btn" type="submit">שליחה</button>
+                    <button class="return-btn" type="button" onclick="location.href='HomePage.html'"> חזור</button>
+                </div>
+            </div>
+        </form>
+
+        <div class = "contact-info">
+            <h3> צרו איתנו קשר</h3>
+            <p>אנחנו כאן בשבילכם, זמינים להתלבט איתכם ולענות לכם על כל השאלות על מנת שתהיו מרוצים.</p>
+            <p></p>
+            <div class = info">
+                 <div class="information">
+                     <img src="img/location.png" class = "img">
+                     <p>   הכובשים 57,זכרון יעקב</p>
+                 </div>
+                  <div class="information">
+                     <img src="img/email.png" class = "img">
+                     <p>cookeat@gmail.com  </p>
+                 </div>
+                  <div class="information">
+                     <img src="img/call.png" class = "img">
+                     <p> 04-6395555  </p>
+                 </div>
+            </div>
+            <div class="social-media">
+                <div class = "social-icon">
+                    <a href="#">
+                        <i class = "fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class = "fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

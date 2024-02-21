@@ -1,0 +1,63 @@
+/*!--------------------------- Register -----------------------------*/
+
+.ranking{
+    display:flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.input-row label{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+
+}
+
+/*------------------- Start Rating--------------*/
+
+.rating-css{
+    padding: 20px;
+}
+
+.rating-css input{
+    width: 400px;
+}
+.star-icon ::before {
+    content: '\2605';
+    color: gold;
+    font-size: 24px;
+    padding: 5px;
+}
+.ranking input {
+    display: none;
+}
+
+/* Style the star icons */
+.star-icon::before {
+    content: '\2605';
+    color: #838383;
+    font-size: 60px;
+    text-shadow: 1px 1px 0 #ffe400;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Change color of stars to gold when selected */
+.rating-css input:checked + .star-icon::before,
+.rating-css input:checked ~ .star-icon::before {
+    color: gold; /* Color of selected stars */
+}
+
+.rating-css label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}

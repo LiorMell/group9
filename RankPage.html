@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cook Eat</title>
+    <title> Increment & Decrement Button </title>
+    <link rel="stylesheet" href="RankPage.css">
+    <link rel="stylesheet" href="General.css">
+    <script defer src="RankPage.js"></script>
+
+</head>
+<body>
+<!--   Navigation Bar  Start  -->
+<nav class="navBar">
+    <div class = "navDiv">
+        <div  id="logout" style="display: none">
+                <p>שלום רחלי!
+                <a href="HomePage.html">התנתק</a></p>
+        </div>
+        <ul class="navItems">
+            <li><a href="HomePage.html">דף הבית</a></li>
+            <li><a href="GalleryPage.html">גלריה</a></li>
+            <li><a href="WorkshopsPage.html">רשימת סדנאות</a></li>
+            <li><a href="AboutPage.html">אודות</a></li>
+            <li><a href="ContactPage.html">צור קשר</a></li>
+            <li class="chosen-page" id="loggedInPage" style="display: none"><a href="PrivateAreaPage.html">אזור אישי</a></li>
+        </ul>
+
+        <a href="HomePage.html">
+        <img class="img-logo"  src="img/CookEat-Logo.png" alt="Cook Eat Logo">  </a>
+
+    </div>
+</nav>
+
+<!--   Navigation Bar  End  -->
+
+<div class="container-wrapper">
+    <div id="workshopDetails"> </div>
+
+    <div class = "container">
+        <form action="" id="form" class="rating-css">
+                <div class="ranking">
+                    <input class="input" type="radio" id="rank1" name="rank">
+                    <label for="rank1" class="star-icon"></label>
+                    <input class="input" type="radio" id="rank2" name="rank">
+                    <label for="rank2" class="star-icon"></label>
+                    <input class="input" type="radio" id="rank3" name="rank">
+                    <label for="rank3" class="star-icon"></label>
+                    <input class="input" type="radio" id="rank4" name="rank">
+                    <label for="rank4" class="star-icon"></label>
+                    <input class="input" type="radio" id="rank5" name="rank">
+                    <label for="rank5" class="star-icon"></label>
+                </div>
+                <div class="input-row"> 
+                    <label for="notes">הערות</label>
+                    <input class="input" type="text" id="notes">
+                </div>
+
+            <div class="buttons">
+                <button class="submit-btn" type="submit">שליחה</button>
+                <button class="return-btn" type="button" onclick="location.href='PrivateAreaPage.html'"> חזרה</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

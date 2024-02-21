@@ -1,0 +1,215 @@
+/*<!-----------------   Whole Page ------------------>*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, serif;
+}
+
+body{
+    direction: rtl;
+    background: url("img/food-background.jpg");
+    color: #555555;
+}
+
+a{/*all links without text-decoration*/
+    text-decoration: none; /* Remove underline from links */
+    color: inherit;
+}
+/*<!-----------------   Navigation Bar  ------------------>*/
+
+.navBar {
+    width: 100%;
+    background: antiquewhite;
+    padding: 15px;
+    border-bottom: 5px solid lightgrey; /* Add a light line under the navigation bar */
+}
+
+.navDiv {
+    width: 100%;
+    align-items: center;
+}
+
+.navItems{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.img-logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+#logout {
+    position: absolute; /* Set the logout div to absolute positioning */
+    right: 15px; /* Align the logout div to the right */
+    top: 15px;
+}
+
+#logout a:hover{
+    text-decoration: underline;
+}
+
+
+.navDiv li{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+li a{
+    text-transform: uppercase;
+}
+
+li a:hover{
+    color: #C7DCA7;
+    transition: .5s;
+}
+
+#chosen-page{
+    color: #C7DCA7;
+}
+
+
+/*---------------------Containers-------------------------*/
+.container-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 50px;
+}
+/*---------------------Workshop Banners--------------------*/
+.workshop-banner{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 20px;
+}
+.workshopImg{
+    width: 250px;
+    height: 150px;
+}
+
+.banner-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+ }
+.price-banner {
+    background-color: #fff;
+    width: 90px;
+    height: 30px;
+    margin-top: 90px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/*----------------------------Inputs-----------------------*/
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+/*-----------------------Input Validations-----------------*/
+.input-validate.success input{
+  outline: none;
+  border-color: #09c372;
+  box-shadow: 0 0 5px #09c372;
+}
+
+.input-validate.error input{
+  outline: none;
+  border-color: #ff3860;
+  box-shadow: 0 0 5px #ff3860;
+}
+
+.input-validate .error{
+    color: #ff3860;
+    font-size: 11px;
+    height: 13px;
+}
+
+/*---------------------Buttons----------------------------*/
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+.submit-btn{
+    width: 100px;
+    height: 45px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    background: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    color: #555555;
+
+}
+.submit-btn:hover{;
+    background-color: cadetblue;
+}
+.return-btn{
+    width: 100px;
+    height: 45px;
+    margin: 10px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;
+}
+.return-btn:hover {
+    background-color: lightcoral;
+}
+
+/* ---------------------Filter --------------------*/
+.filter-container{
+    display: flex;
+    margin: 10px;
+}
+
+.filter-item{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.filter-item input{
+    height: 30px;
+    width: 160px;
+}
+
+.filter-item label{
+    font-weight: bold;
+    font-size: large;
+}

@@ -1,0 +1,123 @@
+
+/**--------------------------- Register -----------------------------*/
+.Workshop-container {
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.container-sides{
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-row{
+    display:flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.input-row label{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity{
+    width: 110px;
+    height: 45px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+}
+.quantity span{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.quantity span.num{
+    font-size: 15px;
+    border-right: 1px solid rgba(0,0,0,2);
+    border-left: 1px solid rgba(0,0,0,2);
+    pointer-events: none;
+    padding:5px;
+    margin: 0 5px;
+}
+.submit-btn{
+    width: 130px;
+    height: 45px;
+    padding: 10px 30px;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    background: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.submit-btn:hover{;
+    background-color: cadetblue;
+}
+.return-btn{
+    width: 100px;
+    height: 45px;
+    margin: 10px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;
+    float: left;
+}
+.return-btn:hover {
+    background-color: lightcoral;
+}
+
+/*------------Inputs Validations*/
+.input-row.success input{
+  outline: none;
+  border-color: #09c372;
+  box-shadow: 0 0 5px #09c372;
+}
+
+.input-row.error input{
+  outline: none;
+  border-color: #ff3860;
+  box-shadow: 0 0 5px #ff3860;
+}
+
+.input-row .error{
+    color: #ff3860;
+    font-size: 11px;
+    height: 13px;
+}

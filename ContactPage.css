@@ -1,0 +1,82 @@
+
+.form{
+     display: flex;
+    flex-direction: row;
+}
+
+.customer-input{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.input{
+    width: 100%;
+    outline: none;
+    padding: 5px 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    margin: 5px;
+    height: 30px;
+}
+#contact_reason{
+    height: 150px;
+    padding: 0 5px 10px;
+    min-height: 150px;
+    border-radius: 10px;
+    line-height: 1.2;
+}
+
+.contact-info{
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.contact-info h3{
+    font-size: 30px;
+    color: #555555;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.7rem;
+}
+
+.information{
+    display: flex;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.information p{
+    margin-right: 10px;
+}
+.social-icon{
+    display: flex;
+    margin-top: 0.5rem;
+}
+.social-icon a{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    line-height:35px;
+    margin-right: 0.5rem;
+}
+.social-icon a:hover{
+    transform: scale(1.5);
+}
